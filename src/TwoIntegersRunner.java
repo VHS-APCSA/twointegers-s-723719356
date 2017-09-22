@@ -4,13 +4,12 @@ public class TwoIntegersRunner
 {
 	public static void main(String[] args)
 	{
-		TwoIntegers input = new TwoIntegers(0, 0);
-		int number1;
-		int number2;
-		System.out.print("Please enter your first integer!");
-		number1 = input.nextInt(0);
-		System.out.print("Please enter your second integer!");
-		number2 = input.nextInt(0);
-		String answers = arithmetic();
+		Scanner input = new Scanner(System.in);
+		System.out.println("Please enter your integers!");
+		int input1 = input.nextInt();
+		int input2 = input.nextInt();
+		TwoIntegers twoIntegers = new TwoIntegers(1, 2);
+		String answer = twoIntegers.arithmetic();
+		System.out.println(answer);
 	}
 }
