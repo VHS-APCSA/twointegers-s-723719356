@@ -69,31 +69,48 @@ public class TwoIntegers
 		{
 			compareIntegers = integer1 + " is less than " + integer2;
 		}
+		if(integer1==integer2)
+		{
+			compareIntegers = integer1 + " is equal to " + integer2;
+		}
 		return compareIntegers;
 	}
-	public String oddOrEven()
+	public String oddOrEvenInt1()
 	{
-		String oddOrEven = "";
+		String oddOrEven1 = "";
 		if(integer1%2==0)
 		{
-			oddOrEven = integer1 + " is Even \n";
+			oddOrEven1 = integer1 + " is Even \n";
 		}
 		else
 		{
-			oddOrEven = integer1 + " is Odd \n";
+			oddOrEven1 = integer1 + " is Odd \n";
 		}
-		return oddOrEven;
+		return oddOrEven1;
+	}
+	public String oddOrEvenInt2()
+	{
+		String oddOrEven2 = "";
+		if(integer2%2==0)
+		{
+			oddOrEven2 = integer2 + " is Even \n";
+		}
+		else 
+		{
+			oddOrEven2 = integer2 + " is Odd \n";
+		}
+		return oddOrEven2;
 	}
 	public String multiple()
 	{
 		String multiple = "";
 		if (integer2%integer1==0)
 		{
-			multiple = "Integer 1 is a multiple of Integer 2";
+			multiple = integer1 + " is a multiple of " + integer2;
 		}
 		else 
 		{
-			multiple = "Integer 1 is not a multiple of Integer 2";
+			multiple = integer1 + " is not a multiple of " + integer2;
 		}
 		return multiple;
 	}

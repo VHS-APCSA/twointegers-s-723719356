@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class TwoIntegersRunner
@@ -15,8 +16,11 @@ public class TwoIntegersRunner
 		String comparison = compareIntegers.compareIntegers();
 		System.out.println(comparison);
 		TwoIntegers oddOrEven = new TwoIntegers(input1, input2);
-		String oddOrEvenAnswer = oddOrEven.oddOrEven();
-		System.out.print(oddOrEvenAnswer);
+		String oddOrEvenAnswer1 = oddOrEven.oddOrEvenInt1();
+		System.out.print(oddOrEvenAnswer1);
+		TwoIntegers oddOrEven2 = new TwoIntegers(input1, input2);
+		String oddOrEvenAnswer2 = oddOrEven2.oddOrEvenInt2();
+		System.out.print(oddOrEvenAnswer2);
 		TwoIntegers multiple = new TwoIntegers(input1, input2);
 		String multipleanswer = multiple.multiple();
 		System.out.print(multipleanswer);
